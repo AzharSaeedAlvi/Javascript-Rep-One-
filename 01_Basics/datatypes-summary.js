@@ -43,6 +43,50 @@ console.log(typeof myFunction);  // This returns function but in actuality it is
 
 
 
+//**********************************************************************************************************/
+
+
+
+// Stack(Primitive), Heap(Non-Primitive) 
+
+let myYoutubeName = "AzharSaeedAlvi"
+
+// NOTE - STACK CREATES A COPY OF THE VALUE | USED WITH PRIMITIVE DATA TYPES 
+// NOTE - HEAP USES A REFERENCE VALUE | USED WITH NON-PRIMITIVE or REFERENCE DATA TYPES
+
+// EXAMPLE: 
+
+let myNewName = myYoutubeName
+ myNewName = "Gabbar"
+
+console.log(myYoutubeName);  // Returns - "AzharSaeedAlvi"
+console.log(myNewName);     // Returns - "Gabbat"
+
+// Reason - Creates a copy and make changes in that, remember the diagram. 
+
+//Example: Non-Primitive Data Type 
+
+let userOne = {
+    
+    Id: "W508114",
+    UserEmail: "abc@gmail.com",
+}
+
+let userTwo = userOne
+
+userTwo.email = "newabc@gmail.com"
+
+console.log(userOne);   // Updated value since the reference point is the same as that in heap
+console.log(userTwo);  // Updated value since the reference point is the same as that which is present in Heap (remember the diagram) 
+
+
+
+
+
+
+
+
+
 
 
 
