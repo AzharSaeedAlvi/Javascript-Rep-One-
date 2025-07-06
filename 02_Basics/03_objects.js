@@ -1,5 +1,7 @@
 // singleton  ->  Object.create  // constructor method 
 
+// HERE WE WILL COVER OBJECT LITERALS
+
 // object literals
 
 const mySym = Symbol("Key1")
