@@ -17,4 +17,4 @@ SCENARIO - Real life example
 SHORTCUTS:
 1. Shift+Alt+ Down arrow   --> Copies the selcted text or the line to the next line 
 2. ctrl + ~ => opens terminal 
-3. 
+3. Ctrl + d => to select multiple duplicates at once
