@@ -1,4 +1,7 @@
 "user strict"  // Treated as a newer version of JS
+‘Use strict’ is written at the beginning of the code, enforcing stricter parsing and error handling to improve code quality and catch common coding mistakes. 
+
+
 
 // alert("hello")  // we are using nodejs and not browser 
 
