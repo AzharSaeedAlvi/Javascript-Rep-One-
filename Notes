@@ -21,3 +21,5 @@ SHORTCUTS:
 2. ctrl + ~ => opens terminal 
 3. Ctrl + d => to select multiple duplicates at once
 4. Ctrl + c => Terminate the terminal 
+5. Ctrl + L => Clear the terminal
+6. cd filename => To go inside a particular directory
