@@ -56,3 +56,6 @@ return itemValue.itemPrice + acc
 },0)
 
 console.log(`Total Price of the course is ${TotalPricetwo}`);
+
+
+// End of JS Basics Part One
