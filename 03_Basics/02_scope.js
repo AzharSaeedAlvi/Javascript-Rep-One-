@@ -74,3 +74,7 @@ const addTwo = function(num){
 }
 
 
+
+console.log(1 - 'sum');
+console.log(1 + 'sum');
+console.log(10 - 'two');

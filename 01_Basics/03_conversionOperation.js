@@ -1,7 +1,7 @@
 // /* CONVERSIONS */
 
 // let score = "33"
-// let scoreWithAlphabet = "33abc"
+//  let scoreWithAlphabet = "33abc"
 // let scoreWithNull = null
 
 
@@ -10,17 +10,17 @@
 
 // let valueInNumberOne = Number(score)
 // let valueInNumberTwo = Number(scoreWithAlphabet)
-// let valueInNumberThree = Number(scoreWithNull)
+// let valueInNumberThree = Number(scoreWithNull)     
 
 // console.log(typeof valueInNumberOne ) // typeof = Number value = 33
 // console.log(valueInNumberOne)
 
 // console.log(typeof valueInNumberTwo)
-// console.log(valueInNumberTwo)     // NOTE - typeof = Number value = NAN (Not a number)
+// console.log(typeof valueInNumberTwo)     // NOTE - typeof = Number value = NAN (Not a number)
 
-// console.log(typeof scoreWithNull)
+// console.log(typeof scoreWithNull);   // returns object. 
 // console.log(scoreWithNull)        // NOTE - typeof = Object Value = null
-// console.log(valueInNumberThree)  // NOTE -  typeof = Object Value = 0
+// console.log(valueInNumberThree);  // NOTE -  typeof = Object Value = 0
 
 
 
@@ -33,6 +33,7 @@
 
 // */
 
+// console.log(typeof false);  // returns boolean 
 
 // let isLoggedIn = 1 
 
@@ -53,19 +54,18 @@
 
 
 
-
-
 /*  OPERATIONS  */
 
 
 // let value = 3 
 // let negValue = -value
 // console.log(negValue);
+// console.log(typeof negValue);    // Returns number 
 
 // console.log(2+2)
 // console.log(2-2)
 // console.log(2*2)
-// console.log(2**2)  // 2^2
+// console.log(2**4)  // 2^2
 // console.log(2/2)
 // console.log(2%2)  // Remainder 
 
@@ -77,12 +77,20 @@
 // console.log(str3);
 
 
-// console.log("1" + "2")  // result in 12 
-// console.log("1" + 2)    // result in 12 
-// console.log( 1+ "2")    // result in 12
-// console.log(1 + "2" + "2") // results in 122   // Explanation can be found under ToPrimitive in documentation  
-// console.log(typeof 1 + "2" + "2")
+// const a = 1 - "2" + "2" 
+// console.log(a)  // result in -12 
+// console.log(typeof a);     // Returns String  
+
+// console.log("2" + "2" - 1); // Returns 21
+// console.log(typeof "2" + "2" - 1);   // returns NaN
+console.log(1 - 3);
+// // console.log("1" + 2)    // result in 12     || typeof -> string2
+// // console.log( 1+ "2")    // result in 12     || typeof -> string2
+// // console.log(1 + "2" + "2") // results in 122 ||typeof -> string   // Explanation can be found under ToPrimitive in documentation  
+// console.log(typeof 1 + "2" + "2") // results in number22 
 // console.log(1 + 2 + "2")  // results in 32  
+// console.log(typeof 1 + 2 + "2")  // results in number22
+// console.log(typeof (1 + 2) + "2")  // results in number2
 
 // console.log(+true);  // output 1
 // console.log(true);   // output true
@@ -98,6 +106,11 @@ console.log(gameCounter);
 
 ++gameCounter; 
 console.log(gameCounter);
+
+
+// c = null console.log(c);  // This gives an error. 
+// c = null, console.log(c); // null 
+
 
 
 
