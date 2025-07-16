@@ -38,8 +38,11 @@ console.log(undefined > 0);   // Flase
 console.log(undefined < 0);   // False 
 console.log(null > 0);        // False
 console.log(null < 0);        // False
-console.log(null == -0);        // False
+console.log(null == -0);        // False    // Reason null is only looselyequal to 
 
 console.log(null <= 0);    // true 
 console.log(undefined <= 0);   // false 
 console.log ( null <= -0);  // True
+
+console.log(undefined == NaN);
+console.log(null == NaN);

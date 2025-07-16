@@ -35,23 +35,22 @@ console.log(myArr[0]);
 //Difference 
 
 
-console.log("A", myArr)
-
+console.log("A", myArr)   // Original array
+console.log(typeof myArr);
 
 const myn1 = myArr.slice(1,3)  // Doesn't make change in the orginal array and give value excluding the last placeholder
 
-console.log(myn1); 
+console.log("Variable in which slice() is applied and stored returns this: " , myn1); 
 console.log(typeof myn1);
-console.log("B", myArr);
-
+console.log("Original array after slice() has been used:  ", myArr);  // Returns what the original array after slice has been applied i.e [0,1,2,3,4,5])
 
 const myn2 = myArr.splice(1,3)   
 // removes the values present in the original array including the last placeholder 
 // (i.e. on the 3rd place) and returns the values that have been removed
 
-console.log(myn2);
-console.log(typeof myn2);
-console.log("C", myArr);
+console.log("Variable on which splice() has been applied and the value is stored : ", myn2); // Returns when slice is applied (i.e. [1,2])
+console.log(typeof myn2);      // Returns when splice is applied (i.e. [1,2,3])
+console.log("Original array value once splice has been applied: ", myArr);       // Returns what is left of the original array after splice is applies (i.e [0,4,5])
 
 
 

@@ -60,7 +60,7 @@ let myNewName = myYoutubeName
  myNewName = "Gabbar"
 
 console.log(myYoutubeName);  // Returns - "AzharSaeedAlvi"
-console.log(myNewName);     // Returns - "Gabbat"
+console.log(myNewName);     // Returns - "Gabbar"
 
 // Reason - Creates a copy and make changes in that, remember the diagram. 
 
