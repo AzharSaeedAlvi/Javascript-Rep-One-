@@ -2,7 +2,7 @@
 
 // HERE WE WILL COVER OBJECT LITERALS
 
-// object literals
+// object literals - create an object without using constructor.   --> {...} value : 'Azhar,    || This is the syntax of the object literals. 
 
 const mySym = Symbol("Key1")
 
@@ -46,3 +46,4 @@ console.log(JsUser.greeting()); // This will return the action inside the functi
 
 
 
+// What is a prototype-linked method? 
