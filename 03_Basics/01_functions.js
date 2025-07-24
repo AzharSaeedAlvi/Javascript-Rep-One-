@@ -30,7 +30,7 @@ function addTwoNumbers(number1, number2){
 
 // const result = addTwoNumbers(3,5)
 
-// console.log("Result", result);
+// console.log("Result", result);   // This prints "Result" and the value stored in result.
 
 
 function loginUserMessage(username = "Sam"){    // Sam is the default value as that would prevent the scenario where we get undefined value
@@ -66,9 +66,11 @@ function calculateCartPrice(val1, val2, ...num1){    // ... is called a rest ope
 return num1 
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))  // this will  give the output as 500, 2000
+// console.log(calculateCartPrice(200, 400, 500, 2000))  // this will  give the output as 500, 2000  
 // console.log(calculateCartPrice(200,400,500,2000, 3000)) // this will return output as 500, 2000 and 3000 since the apart from the first 2 values val1 and val2 other will go into the array created by using the rest operator. 
 
+
+//----- BASICALLY IT TAKES THE VALUE MENTIONED AND STORES THE REMAINING IN AN ARRAY 
 
 
 // const user ={
@@ -99,5 +101,47 @@ function getSecondValue(getArray){
 }
 
 console.log(getSecondValue(myNewArray));  // alternatively console.log(getSecondValue([200, 300, 400, 600]))
+
+
+
+
+
+                // ---------------------------- USE CASE FOR REST OPERATOR -------------------------------------------------- // 
+
+                //------- REST in Function Parameters -------------// 
+
+function sum(...numbers) {
+  return numbers.reduce((acc, num) => acc + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4)); // 10
+
+
+//----------------------------REST in Object Destructing----------------------// 
+
+const user = {
+  name: "CD Learner",
+  age: 25,
+  country: "India",
+  role: "Developer"
+};
+
+const { name, ...rest } = user;
+console.log(name); // "CD Learner"
+console.log(rest); // { age: 25, country: "India", role: "Developer" }
+
+
+
+//----------------------REST in ARRAYS ---------------------------------------// 
+
+const [first, ...others] = [10, 20, 30, 40];
+console.log(first); // 10
+console.log(others); // [20, 30, 40]
+
+
+
+
+/// Spread when you are unpacking things 
+/// Rest when you are packing things.
 
 

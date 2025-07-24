@@ -55,6 +55,12 @@ var c = 300
 
 
 // +++++++++++++++++++++++++++++++++++++++++++interesting++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ // 
+
+
+// Hoisting --> Your variables and functions delarations are moved to the top of their scope before the code is executed. This is hoisting. 
+
+// Hositing means that JS moves declarations to  the top of the current scope(before the code runs.)
+
 // Two ways to declare a function 
 
 
@@ -78,3 +84,7 @@ const addTwo = function(num){
 console.log(1 - 'sum');
 console.log(1 + 'sum');
 console.log(10 - 'two');
+
+
+
+
